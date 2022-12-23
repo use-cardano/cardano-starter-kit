@@ -1,7 +1,11 @@
+
 import "../styles/globals.css"
+import "use-cardano/styles/use-cardano.css"
+import "../styles/use-cardano-overrides.css"
+
 import type { AppProps } from "next/app"
 import { CardanoProvider, CardanoToaster, UseCardanoOptions } from "use-cardano"
-import "use-cardano/styles/use-cardano.css"
+import { DefaultLayout } from "layouts/DefaultLayout"
 
 const options: UseCardanoOptions = {
   allowedNetworks: ["Testnet"],
@@ -15,7 +19,9 @@ const options: UseCardanoOptions = {
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <CardanoProvider options={options}>
-      <Component {...pageProps} />
+      <DefaultLayout>
+        <Component {...pageProps} />
+      </DefaultLayout>
 
       <CardanoToaster />
     </CardanoProvider>

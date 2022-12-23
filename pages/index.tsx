@@ -1,55 +1,34 @@
-import Head from "next/head"
 import { Inter } from "@next/font/google"
-import { CardanoWalletSelector } from "use-cardano"
-import Link from "next/link"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>use-cardano Next.JS starter</title>
+    <div className="text-center my-4 max-w-4xl m-auto">
+      <h1 style={inter.style} className="uppercase text-4xl my-8">
+        use-cardano next.js starter
+      </h1>
 
-        <meta
-          name="description"
-          content="A boilerplate to get started building web3 dApps on Cardano."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <div style={inter.style} className="my-4 text-left ">
+        This is a starter kit for use-cardano, which is a React hook, context, and set of components
+        for interacting with the Cardano blockchain. It is built on top of{" "}
+        <a
+          className="underline underline-offset-2"
+          href="https://www.npmjs.com/lucid-cardano"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Lucid
+        </a>{" "}
+        and provides a simple API for interacting with the Cardano blockchain. It is designed to be
+        easy to use, while still providing all the bells and whistles you need to build your dApp.
+      </div>
 
-      <main className="bg-gray-50 min-h-screen">
-        <nav className="flex h-16items-center justify-between w-full py-2 px-4">
-          <div>Logo</div>
-
-          <div className="flex items-center">
-            <Link href="/one">
-              <button className="h-10 rounded mx-2 px-6 flex items-center bg-blue-100 hover:bg-blue-200 transition-colors duration-300">
-                One
-              </button>
-            </Link>
-
-            <Link href="/one">
-              <button className="h-10 rounded mx-2 px-6 flex items-center bg-blue-100 hover:bg-blue-200 transition-colors duration-300">
-                Two
-              </button>
-            </Link>
-
-            <Link href="/one">
-              <button className="h-10 rounded mx-2 px-6 flex items-center bg-blue-100 hover:bg-blue-200 transition-colors duration-300">
-                Three
-              </button>
-            </Link>
-
-            <CardanoWalletSelector />
-          </div>
-        </nav>
-
-        <main>
-          <h1>Header</h1>
-        </main>
-      </main>
-    </>
+      <div style={inter.style} className="my-4 text-left">
+        The aim of use-cardano in general, and the starter kit specifically, is to serve as a simple
+        starting point, but also to help developers get into Cardano dApp development. With this in
+        mind, the examples are designed to be equally functional and educational.
+      </div>
+    </div>
   )
 }
