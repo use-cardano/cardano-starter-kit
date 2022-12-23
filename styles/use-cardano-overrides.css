@@ -3,8 +3,18 @@
   @apply bg-blue-300 text-white font-bold tracking-wider p-0 min-h-0 h-10;
 }
 
-.cardano-wallet-selector__button__icon {
+.cardano-wallet-selector__button {
+  text-transform: uppercase;
+}
+
+/* hide wallet provider icon */
+.cardano-wallet-selector__button img {
   display: none;
+}
+
+.cardano-wallet-selector__button--warning .cardano-wallet-selector__button__content:after {
+  margin-left: -0.5rem;
+  content: "⚠️";
 }
 
 .cardano-wallet-selector__menu__item,
