@@ -10,7 +10,7 @@ export default function Home() {
       </h1>
 
       <div style={inter.style} className="my-4 text-left ">
-        This is a starter kit for use-cardano, which is a React hook, context, and set of components
+        This is a starter project for use-cardano, which is a React hook, context, and set of components
         for interacting with the Cardano blockchain. It is built on top of{" "}
         <a
           className="underline underline-offset-2"
@@ -25,7 +25,7 @@ export default function Home() {
       </div>
 
       <div style={inter.style} className="my-4 text-left">
-        The aim of use-cardano in general, and the starter kit specifically, is to serve as a simple
+        The aim of use-cardano in general, and the starter project specifically, is to serve as a simple
         starting point, but also to help developers get into Cardano dApp development. With this in
         mind, the examples are designed to be equally functional and educational.
       </div>
