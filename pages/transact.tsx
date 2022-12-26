@@ -6,7 +6,7 @@ import { Inter } from "@next/font/google"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export default function Home() {
+export default function Transact() {
   const { isValid, hideToaster, showToaster } = useCardano()
   const tx = useTransaction()
 
@@ -31,10 +31,10 @@ export default function Home() {
         Using Lucid, we can easily send transactions on the Cardano blockchain.
       </div>
 
-      <div className="text-left">
+      <div className="text-left my-8">
         <div className="my-4">
           <label className="flex flex-col w-100">
-            <span className="text-sm lowercase">To Account</span>
+            <span className="text-sm lowercase mb-1">To Account</span>
 
             <input
               className="rounded py-1 px-2 text-gray-800"
@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className="my-4">
           <label className="flex flex-col w-40">
-            <span className="text-sm lowercase">Lovelace</span>
+            <span className="text-sm lowercase mb-1">Lovelace</span>
 
             <input
               className="rounded py-1 px-2 text-gray-800"
