@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge"
 import { CardanoWalletSelector } from "use-cardano"
 
 const className =
-  "h-10 text-white font-bold tracking-widest uppercase rounded mr-2 px-6 flex items-center bg-blue-300 shadow shadow-blue-100s hover:shadow-none hover:bg-blue-400 transition-all duration-300"
+  "h-10 text-white font-bold tracking-widest uppercase rounded mr-2 px-6 flex items-center dark:hover:text-white bg-blue-300 dark:bg-transparent dark:hover:bg-transparent dark:shadow-none shadow shadow-blue-100s hover:shadow-none hover:bg-blue-400 transition-all duration-300"
 
 export const Navigation = () => {
   const { asPath } = useRouter()
@@ -21,19 +21,51 @@ export const Navigation = () => {
     <nav className="flex h-24 items-center justify-between w-full py-2">
       <div className="flex items-center">
         <Link href="/">
-          <button className={twMerge(className, isHome && "text-blue-500")}>home</button>
+          <button
+            className={twMerge(
+              className,
+              isHome &&
+                "text-blue-500 dark:text-white dark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
+            )}
+          >
+            home
+          </button>
         </Link>
 
         <Link href="/transact">
-          <button className={twMerge(className, isTransact && "text-blue-500")}>transact</button>
+          <button
+            className={twMerge(
+              className,
+              isTransact &&
+                "text-blue-500 dark:text-white ark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
+            )}
+          >
+            transact
+          </button>
         </Link>
 
         <Link href="/sign">
-          <button className={twMerge(className, isSign && "text-blue-500")}>Sign</button>
+          <button
+            className={twMerge(
+              className,
+              isSign &&
+                "text-blue-500 dark:text-white ark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
+            )}
+          >
+            Sign
+          </button>
         </Link>
 
         <Link href="/mint">
-          <button className={twMerge(className, isMint && "text-blue-500")}>Mint</button>
+          <button
+            className={twMerge(
+              className,
+              isMint &&
+                "text-blue-500 dark:text-white ark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
+            )}
+          >
+            Mint
+          </button>
         </Link>
       </div>
 

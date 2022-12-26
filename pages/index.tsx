@@ -4,10 +4,20 @@ const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
-    <div className="text-center my-4 max-w-4xl m-auto">
-      <h1 style={inter.style} className="uppercase text-4xl my-8">
-        use-cardano next.js starter
+    <div className="text-center my-4 max-w-4xl m-auto text-gray-900 dark:text-gray-100">
+      <h1
+        style={inter.style}
+        className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl"
+      >
+        use-cardano
       </h1>
+
+      <p
+        style={inter.style}
+        className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+      >
+        next.js starter{" "}
+      </p>
 
       <div style={inter.style} className="my-4 text-left ">
         This is a starter project for use-cardano, which is a React hook, context, and set of
