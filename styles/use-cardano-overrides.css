@@ -8,9 +8,8 @@
   display: none;
 }
 
-.cardano-wallet-selector__button--warning .cardano-wallet-selector__button__content:after {
-  margin-left: -0.5rem;
-  content: "⚠️";
+.cardano-wallet-selector__button--warning {
+  @apply line-through;
 }
 
 .cardano-wallet-selector__menu__item,

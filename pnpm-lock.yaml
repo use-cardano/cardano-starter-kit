@@ -16,6 +16,7 @@ specifiers:
   postcss: ^8.4.20
   react: 18.2.0
   react-dom: 18.2.0
+  tailwind-merge: ^1.8.1
   tailwindcss: ^3.2.4
   typescript: 4.9.4
   use-cardano: 1.0.0-beta.15
@@ -32,6 +33,7 @@ dependencies:
   next-http-proxy-middleware: 1.2.5
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  tailwind-merge: 1.8.1
   typescript: 4.9.4
   use-cardano: 1.0.0-beta.15_h3oi7stj5a7fdvdpxh2fib5ti4
 
@@ -2693,6 +2695,10 @@ packages:
     dependencies:
       '@pkgr/utils': 2.3.1
       tslib: 2.4.1
+    dev: false
+
+  /tailwind-merge/1.8.1:
+    resolution: {integrity: sha512-+fflfPxvHFr81hTJpQ3MIwtqgvefHZFUHFiIHpVIRXvG/nX9+gu2P7JNlFu2bfDMJ+uHhi/pUgzaYacMoXv+Ww==}
     dev: false
 
   /tailwindcss/3.2.4_postcss@8.4.20:
