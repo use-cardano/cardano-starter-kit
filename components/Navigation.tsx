@@ -10,8 +10,6 @@ const className =
 export const Navigation = () => {
   const { asPath } = useRouter()
 
-  console.log(asPath)
-
   const isHome = useMemo(() => asPath === "/", [asPath])
   const isTransact = useMemo(() => asPath === "/transact", [asPath])
   const isSign = useMemo(() => asPath === "/sign", [asPath])
@@ -25,7 +23,7 @@ export const Navigation = () => {
             className={twMerge(
               className,
               isHome &&
-                "text-blue-500 dark:text-white dark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
+                "text-black dark:text-white dark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
             )}
           >
             home
@@ -37,7 +35,7 @@ export const Navigation = () => {
             className={twMerge(
               className,
               isTransact &&
-                "text-blue-500 dark:text-white ark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
+                "text-black dark:text-white ark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
             )}
           >
             transact
@@ -49,7 +47,7 @@ export const Navigation = () => {
             className={twMerge(
               className,
               isSign &&
-                "text-blue-500 dark:text-white ark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
+                "text-black dark:text-white ark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
             )}
           >
             Sign
@@ -61,7 +59,7 @@ export const Navigation = () => {
             className={twMerge(
               className,
               isMint &&
-                "text-blue-500 dark:text-white ark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
+                "text-black dark:text-white ark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:underline underline-offset-4"
             )}
           >
             Mint

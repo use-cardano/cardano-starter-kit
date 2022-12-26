@@ -74,7 +74,7 @@ export default function Sign() {
         <div className="my-4">
           <button
             disabled={!canSign}
-            className="border my-4 w-40 px-2 py-1 cursor-pointer disabled:cursor-not-allowed disabled:text-gray-200 rounded bg-white text-gray-800 font-bold uppercase"
+            className="border hover:bg-blue-400 text-white my-4 w-40 py-2 cursor-pointer transition-colors disabled:cursor-not-allowed disabled:text-gray-200 rounded bg-blue-300 disabled:bg-blue-200 dark:bg-white dark:text-gray-800 dark:disabled:bg-white dark:hover:bg-white font-bold uppercase"
             onClick={() => {
               hideToaster()
               signMessage()

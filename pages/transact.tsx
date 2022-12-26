@@ -37,7 +37,7 @@ export default function Transact() {
             <span className="text-sm lowercase mb-1">To Account</span>
 
             <input
-              className="rounded py-1 px-2 text-gray-800"
+              className="rounded py-1 px-2 text-gray-800 border"
               type="text"
               placeholder="addr..."
               value={tx.toAccount}
@@ -51,7 +51,7 @@ export default function Transact() {
             <span className="text-sm lowercase mb-1">Lovelace</span>
 
             <input
-              className="rounded py-1 px-2 text-gray-800"
+              className="rounded py-1 px-2 text-gray-800 border"
               type="number"
               min="0"
               step="1000"
@@ -64,7 +64,7 @@ export default function Transact() {
 
         <div className="my-4">
           <button
-            className="border my-4 w-40 px-2 py-1 cursor-pointer disabled:cursor-not-allowed disabled:text-gray-200 rounded bg-white text-gray-800 font-bold uppercase"
+            className="border hover:bg-blue-400 text-white my-4 w-40 py-2 cursor-pointer transition-colors disabled:cursor-not-allowed disabled:text-gray-200 rounded bg-blue-300 disabled:bg-blue-200 dark:bg-white dark:text-gray-800 dark:disabled:bg-white dark:hover:bg-white font-bold uppercase"
             disabled={!tx.canTransact || !!tx.error}
             onClick={tx.sendTransaction}
           >
