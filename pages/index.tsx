@@ -95,6 +95,17 @@ export default function Home() {
         balance of flexibility, composability, and ease of use. It is also very easy to use with
         Next.js, and provides a lot of functionality out of the box.
       </div>
+
+      <div style={inter.style} className="mt-12 mb-4">
+        <a
+          className="underline underline-offset-4"
+          href="https://github.com/use-cardano/cardano-starter-kit/generate"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Fork the repository to use the template
+        </a>
+      </div>
     </div>
   )
 }
