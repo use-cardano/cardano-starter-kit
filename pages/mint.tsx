@@ -49,7 +49,7 @@ export default function Mint() {
       </h1>
 
       <div style={inter.style} className="my-4 text-center">
-        Using Lucid, we can sign a message on the Cardano blockchain.
+        Using Lucid, we can mint a token on the Cardano blockchain.
       </div>
 
       <div className="text-left my-8">
