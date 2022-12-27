@@ -62,7 +62,7 @@ export default function Sign() {
             <span className="text-sm lowercase mb-1">Message</span>
 
             <input
-              className="rounded py-1 px-2 text-gray-800"
+              className="rounded py-1 px-2 text-gray-800 border"
               name="message"
               placeholder="Hello, Cardano!"
               value={message || ""}

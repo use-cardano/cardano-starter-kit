@@ -1,5 +1,5 @@
 .cardano-wallet-selector__button {
-  @apply bg-blue-300 dark:bg-transparent border-blue-300 dark:border-white text-white font-bold tracking-wider p-0 min-h-0 h-10;
+  @apply bg-blue-300 min-w-[225px] dark:bg-transparent border-blue-300 dark:border-white text-white font-bold tracking-wider p-0 min-h-0 h-10;
 }
 
 /* hide wallet provider icon */
@@ -7,16 +7,12 @@
   display: none;
 }
 
-.cardano-wallet-selector__button--warning .cardano-wallet-selector__button__content {
-  display: none;
-}
-
-.cardano-wallet-selector__button--warning:after {
-  content: "Invalid Network";
+.cardano-wallet-selector__button__content {
+  @apply px-4 gap-0;
 }
 
 .cardano-wallet-selector__menu__item,
-.cardano-wallet-selector__menu__item:last-child { 
+.cardano-wallet-selector__menu__item:last-child {
   @apply border-blue-300 dark:border-white;
 }
 

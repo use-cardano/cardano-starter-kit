@@ -45,7 +45,7 @@ export default function Mint() {
         style={inter.style}
         className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl"
       >
-        Mint a token
+        Mint a Token
       </h1>
 
       <div style={inter.style} className="my-4 text-center">
@@ -58,7 +58,7 @@ export default function Mint() {
             <span className="text-sm lowercase mb-1">NFT name</span>
 
             <input
-              className="rounded py-1 px-2 text-gray-800"
+              className="rounded py-1 px-2 text-gray-800 border"
               name="message"
               placeholder="Hello, Cardano!"
               value={name || ""}

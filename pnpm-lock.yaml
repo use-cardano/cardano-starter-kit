@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@next/font': 13.1.1
-  '@types/node': 18.11.17
+  '@types/node': 18.11.18
   '@types/react': 18.0.26
   '@types/react-dom': 18.0.10
   autoprefixer: ^10.4.13
@@ -19,11 +19,11 @@ specifiers:
   tailwind-merge: ^1.8.1
   tailwindcss: ^3.2.4
   typescript: 4.9.4
-  use-cardano: 1.0.0-beta.15
+  use-cardano: 1.0.0-beta.17
 
 dependencies:
   '@next/font': 13.1.1
-  '@types/node': 18.11.17
+  '@types/node': 18.11.18
   '@types/react': 18.0.26
   '@types/react-dom': 18.0.10
   eslint: 8.30.0
@@ -35,7 +35,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   tailwind-merge: 1.8.1
   typescript: 4.9.4
-  use-cardano: 1.0.0-beta.15_h3oi7stj5a7fdvdpxh2fib5ti4
+  use-cardano: 1.0.0-beta.17_h3oi7stj5a7fdvdpxh2fib5ti4
 
 devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.20
@@ -323,7 +323,7 @@ packages:
   /@types/http-proxy/1.17.3:
     resolution: {integrity: sha512-wIPqXANye5BbORbuh74exbwNzj+UWCwWyeEFJzUQ7Fq3W2NSAy+7x7nX1fgbEypr2/TdKqpeuxLnXWgzN533/Q==}
     dependencies:
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
     dev: false
 
   /@types/json5/0.0.29:
@@ -334,8 +334,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.11.17:
-    resolution: {integrity: sha512-HJSUJmni4BeDHhfzn6nF0sVmd1SMezP7/4F0Lq+aXzmp2xm9O7WXrUtHW/CHlYVtZUbByEvWidHqRtcJXGF2Ng==}
+  /@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
     dev: false
 
   /@types/normalize-package-data/2.4.1:
@@ -2877,8 +2877,8 @@ packages:
       punycode: 2.1.1
     dev: false
 
-  /use-cardano/1.0.0-beta.15_h3oi7stj5a7fdvdpxh2fib5ti4:
-    resolution: {integrity: sha512-zK05aXZDkUB9PZtxtqKQ7tKQR8wYoqIxIuY+iXi6AxXe9R714AmoPfuQAXVP/4p7RgTQIDoSSiTfq1ISVZyeoQ==}
+  /use-cardano/1.0.0-beta.17_h3oi7stj5a7fdvdpxh2fib5ti4:
+    resolution: {integrity: sha512-cKwhh21bixYZm3G+JNfxEQecUZzETg8WWfQmfWOftEFK5wu58f83588nhw2VJOIgNSH/CHppKTIXwkI2C3+GhA==}
     engines: {node: ^16.15.0  || ^17.0.0 || ^18.0.0}
     peerDependencies:
       lucid-cardano: 0.8.3
