@@ -9,19 +9,28 @@ export default function Home() {
         style={inter.style}
         className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl"
       >
-        use-cardano
+        Cardano Web3 dApp
       </h1>
 
       <p
         style={inter.style}
-        className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+        className="mb-6 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
       >
-        next.js starter{" "}
+        Starter Kit
       </p>
 
       <div style={inter.style} className="my-4 text-left ">
-        This is a starter project for use-cardano, which is a React hook, context, and set of
-        components for interacting with the Cardano blockchain. It is built on top of{" "}
+        This is a starter kit for building cardano web3 applications. It uses{" "}
+        <a
+          className="underline underline-offset-2"
+          href="https://use-cardano.alangaming.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          use-cardano
+        </a>{" "}
+        which is a React hook, context, and set of components for interacting with the Cardano
+        blockchain, which is built on top of{" "}
         <a
           className="underline underline-offset-2"
           href="https://lucid.spacebudz.io/"
@@ -34,9 +43,44 @@ export default function Home() {
       </div>
 
       <div style={inter.style} className="my-4 text-left">
-        The aim of use-cardano in general, and the starter project specifically, is to serve as a
-        simple starting point, but also to help developers get into Cardano dApp development. With
-        this in mind, the examples are designed to be equally functional and educational.
+        The aim of this project is to serve as a simple starting point, but also to help developers
+        get into Cardano dApp development. With that said, this tech stack provides all
+        functionality needed for writing off chain code for dApps and should scale with your needs.
+      </div>
+
+      <div style={inter.style} className="my-4 text-left">
+        <span className="italic text-gray-500">
+          In an upcoming version of this boilerplate, we aim to include a DSL (Domain Specific
+          Language) for the on-chain components of Cardano dApp development. We are still deciding
+          on which language to use, but we are considering either{" "}
+          <a
+            className="underline underline-offset-2"
+            href="https://www.hyperion-bt.org/Helios-Book/intro.html"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Helios
+          </a>
+          ,{" "}
+          <a
+            className="underline underline-offset-2"
+            href="https://aiken-lang.github.io/aiken/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Aiken
+          </a>
+          , or{" "}
+          <a
+            className="underline underline-offset-2"
+            href="https://www.harmoniclabs.tech/plu-ts-docs/index.html"
+            rel="noreferrer"
+            target="_blank"
+          >
+            plu-ts
+          </a>
+          .
+        </span>
       </div>
 
       <div style={inter.style} className="my-4 text-left">
