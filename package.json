@@ -1,5 +1,8 @@
 {
   "name": "cardano-web3-dapp-starter-kit",
+  "engines": {
+    "node": "^16.15"
+  },
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
