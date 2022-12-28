@@ -1,25 +1,26 @@
-# use-cardano starter project
+# Cardano Starter Kit
 
-This is a starter project for the [use-cardano](https://www.npmjs.com/package/use-cardano) library.
-
-## What is use-cardano?
-
-use-cardano is a React context, hook, and set of components for interacting with the Cardano blockchain.
+Build Web3 applications on Cardano with [use-cardano](https://use-cardano.alangaming.com) and [Lucid](https://lucid.spacebudz.io/)
 
 ## What's included?
 
 Except for the use-cardano library, this project also includes
 
-* [Next.js](https://nextjs.org/) with [TypeScript](https://www.typescriptlang.org/)
-* [Tailwind CSS](https://tailwindcss.com/) for styling
-* [Helios](https://www.hyperion-bt.org/Helios-Book/) for smart contract development
-* [lucid-cardano](https://www.github.com/spacebudz/lucid) for blockchain interactions
+- [lucid-cardano](https://www.github.com/spacebudz/lucid)
+- [use-cardano](https://www.github.com/use-cardano/use-cardano)
+- [Next.js](https://nextjs.org/) with [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## run instructions
 
 ```sh
 pnpm i && pnpm dev
 ```
+
+## Docs
+
+- [use-cardano](https://use-cardano.alangaming.com)
+- [Lucid](https://lucid.spacebudz.io/)
 
 ## license
 

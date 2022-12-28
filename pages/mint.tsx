@@ -40,7 +40,7 @@ export default function Mint() {
   const canMint = useMemo(() => lucid && account?.address && name, [lucid, account?.address, name])
 
   return (
-    <div className="text-center my-4 max-w-4xl m-auto text-gray-900 dark:text-gray-100">
+    <div className="text-center max-w-4xl m-auto text-gray-900 dark:text-gray-100">
       <h1
         style={inter.style}
         className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl"
