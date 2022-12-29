@@ -27,7 +27,7 @@
     "sharp": "^0.31.3",
     "tailwind-merge": "^1.8.1",
     "typescript": "4.9.4",
-    "use-cardano": "1.0.0-beta.17"
+    "use-cardano": "1.0.0-beta.19"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
