@@ -9,9 +9,9 @@ specifiers:
   concurrently: ^7.6.0
   eslint: 8.30.0
   eslint-config-next: 13.1.1
+  http-proxy: ^1.18.1
   lucid-cardano: ^0.8.3
   next: 13.1.1
-  next-http-proxy-middleware: ^1.2.5
   open-cli: ^7.1.0
   postcss: ^8.4.20
   react: 18.2.0
@@ -21,6 +21,7 @@ specifiers:
   tailwindcss: ^3.2.4
   typescript: 4.9.4
   use-cardano: 1.0.0-beta.19
+  use-cardano-blockfrost-proxy: ^1.0.0
 
 dependencies:
   '@next/font': 13.1.1
@@ -29,15 +30,16 @@ dependencies:
   '@types/react-dom': 18.0.10
   eslint: 8.30.0
   eslint-config-next: 13.1.1_lzzuuodtsqwxnvqeq4g4likcqa
+  http-proxy: 1.18.1
   lucid-cardano: 0.8.3
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
-  next-http-proxy-middleware: 1.2.5
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   sharp: 0.31.3
   tailwind-merge: 1.8.1
   typescript: 4.9.4
   use-cardano: 1.0.0-beta.19_h3oi7stj5a7fdvdpxh2fib5ti4
+  use-cardano-blockfrost-proxy: 1.0.0_http-proxy@1.18.1
 
 devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.20
@@ -321,12 +323,6 @@ packages:
   /@tokenizer/token/0.3.0:
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
     dev: true
-
-  /@types/http-proxy/1.17.3:
-    resolution: {integrity: sha512-wIPqXANye5BbORbuh74exbwNzj+UWCwWyeEFJzUQ7Fq3W2NSAy+7x7nX1fgbEypr2/TdKqpeuxLnXWgzN533/Q==}
-    dependencies:
-      '@types/node': 18.11.18
-    dev: false
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
@@ -2050,16 +2046,6 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
-  /next-http-proxy-middleware/1.2.5:
-    resolution: {integrity: sha512-ni73cl1FKC3s1aTD1aziIhV07TiG5ZrtyCkw8S0yqBRvTIJ2tqII1R+aEgxRav42W2Ht8yTpy96gQuaDJwNOMQ==}
-    engines: {node: '>=10.0.0'}
-    dependencies:
-      '@types/http-proxy': 1.17.3
-      http-proxy: 1.18.1
-    transitivePeerDependencies:
-      - debug
-    dev: false
-
   /next/13.1.1_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-R5eBAaIa3X7LJeYvv1bMdGnAVF4fVToEjim7MkflceFPuANY3YyvFxXee/A+acrSYwYPvOvf7f6v/BM/48ea5w==}
     engines: {node: '>=14.6.0'}
@@ -3079,6 +3065,15 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.1.1
+    dev: false
+
+  /use-cardano-blockfrost-proxy/1.0.0_http-proxy@1.18.1:
+    resolution: {integrity: sha512-UvAJcQ+H1V/PeE0mrT+8dxxbO1CZwZHMitu81sfBFkv+UXie+okY1F6hh8PRJQ3+RaHuYdNDo3X2LEo+DYIIrA==}
+    engines: {node: ^16.15.0  || ^17.0.0 || ^18.0.0}
+    peerDependencies:
+      http-proxy: ^1.18.1
+    dependencies:
+      http-proxy: 1.18.1
     dev: false
 
   /use-cardano/1.0.0-beta.19_h3oi7stj5a7fdvdpxh2fib5ti4:
