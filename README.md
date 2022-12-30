@@ -13,6 +13,8 @@ Except for the use-cardano library, this project also includes
 
 ## run instructions
 
+set up your environment variables in `.env.local` or elsewhere in your system (see `.env.template`)
+
 ```sh
 pnpm i && pnpm dev
 ```
