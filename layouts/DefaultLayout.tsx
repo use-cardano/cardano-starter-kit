@@ -20,7 +20,7 @@ export const DefaultLayout = ({ children }: PropsWithChildren<{}>) => {
       <div className="container mx-auto px-4">
         <Navigation />
 
-        <main className="min-h-[calc(100vh-295px)] pt-12">{children}</main>
+        <main className="h-[calc(100vh-295px)] pt-12">{children}</main>
 
         <Footer />
       </div>
