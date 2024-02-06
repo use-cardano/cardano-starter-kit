@@ -4,8 +4,6 @@ Build Web3 applications on Cardano with [use-cardano](https://use-cardano.alanga
 
 ## What's included?
 
-Except for the use-cardano library, this project also includes
-
 - [lucid-cardano](https://www.github.com/spacebudz/lucid)
 - [use-cardano](https://www.github.com/use-cardano/use-cardano)
 - [Next.js](https://nextjs.org/) with [TypeScript](https://www.typescriptlang.org/)

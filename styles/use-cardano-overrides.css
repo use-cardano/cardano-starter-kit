@@ -6,6 +6,10 @@
   @apply w-5 h-5;
 }
 
+.cardano-wallet-selector__menu {
+  @apply dark:bg-gray-800 opacity-95;
+}
+
 .cardano-wallet-selector__menu__item,
 .cardano-wallet-selector__menu__item:last-child {
   @apply border-blue-300 dark:border-white;
@@ -21,7 +25,8 @@
 
 .cardano-wallet-selector__menu__item__text,
 .cardano-wallet-selector__menu__item--current__checkmark,
-.cardano-wallet-selector__menu__item__disconnect {
+.cardano-wallet-selector__menu__item__disconnect,
+.cardano-wallet-selector__menu__item button {
   @apply text-white;
 }
 
